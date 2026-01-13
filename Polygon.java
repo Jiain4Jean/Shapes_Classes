@@ -88,6 +88,8 @@ public class Polygon extends Object{
     * this should work for every shape
     * */
     public Line[] getLines(){
+        //try-catch block to catch the NullPointerException
+        //because if the polygonPointList is null, we are not able to create Line array with length of polygonPointList
         try{
             Line[] lineList = new Line[this.getPoints().length];
         }
@@ -140,6 +142,7 @@ public class Polygon extends Object{
         }
         //check whether two Point array have the same length
         if(this.getPoints().length == shape.getPoints().length){
+            //to store the index that match the first point in this.Point array
             int save = 0;
             //goal find the point that match at the beginning
             //subgoal: for every iteration, if point in shape.array match the first point in this, we store that index
