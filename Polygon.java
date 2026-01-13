@@ -147,7 +147,7 @@ public class Polygon extends Object{
             //goal find the point that match at the beginning
             //subgoal: for every iteration, if point in shape.array match the first point in this, we store that index
             for(int i = 0; i < shape.getPoints().length; i++){
-                //if the point of this.array is equal any point in shape.array, we save the spot for that point that match
+                //if the first point of this.array is equal any point in shape.array, we save the spot for that point that match
                 if(this.getPoints()[0].equals(shape.getPoints()[i])){
                     //we had checked the i with first element in this, so add 1 to check next
                     save = i + 1;
