@@ -4,7 +4,7 @@ public class Rectangle extends Polygon{
     //instance field to store the height of the rectangle
     private double height;
     //instance field for rectangle center
-    private Point recCenter;
+    private final Point recCenter;
     //the empty list of Point to passing
     /*constructor for Rectangle, set up the rectangle and also get the height and
     width for this rectangle
