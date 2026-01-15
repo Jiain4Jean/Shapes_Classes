@@ -1,4 +1,4 @@
-//the interface to store the static Points() method for EqualateralTriangle
+//the interface to store the static Points() method for EqualateralTriangle and Ngon
 public interface RegularPolygon{
     //abstract method for getSideLength which we will use in the PointsMethod
     public abstract double getSideLength();
